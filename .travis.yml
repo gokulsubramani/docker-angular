@@ -24,4 +24,4 @@ before_script:
 - npm install
 
 script: 
-- npm run test -- --watch=false -codecoverage=true
+- npm run test -- --watch=false --code-coverage

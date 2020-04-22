@@ -4,4 +4,4 @@ services:
 before_install:
     - docker build -t gokulsubramani/docker-angular -f Dockerfile.dev .
 script:
-    - docker run gokulsubramani/docker-angular ng test -- --coverage    
+    - docker run gokulsubramani/docker-angular npm run test -- --coverage    

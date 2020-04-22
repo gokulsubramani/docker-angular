@@ -4,7 +4,8 @@ services:
 before_install:
     - docker build -t gokulsubramani/docker-angular -f Dockerfile.dev .
 install:
+     - npm install -g @angular/cli@latest
      - npm install
 script:
-    - npm run test -- --watch=false --no-progress --browsers=ChromeHeadless
+    - npm run test
     #- docker run -t gokulsubramani/docker-angular -p "4200:4200" npm run start

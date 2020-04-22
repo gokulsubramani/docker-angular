@@ -8,4 +8,4 @@ install:
     - npm ci
 script:
     - ng test --watch=false
-    - docker run gokulsubramani/docker-angular ng test
+    - docker run gokulsubramani/docker-angular

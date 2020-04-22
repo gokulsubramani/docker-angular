@@ -3,5 +3,15 @@ services:
     - docker
 before_install:
     - docker build -t gokulsubramani/docker-angular -f Dockerfile.dev .
+angular_karma:
+    image: trion/ng-cli-karma:latest
+    container_name: 'angular_karma'
+    volumes:
+        - .:/usr/app/
+    working_dir: /usr/app/
+    ports:
+        - 9876:9876
+    command: >
+          bash -c "ng test"
 script:
-    - docker run gokulsubramani/docker-angular npm test
+    - docker run gokulsubramani/docker-angular

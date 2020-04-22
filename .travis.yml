@@ -1,13 +1,7 @@
 sudo: required
-node_js:
-    - "12.16.1"
 services:
     - docker
 before_install:
-    - npm install -g @angular/cli
     - docker build -t gokulsubramani/docker-angular -f Dockerfile.dev .
-install:
-    - npm ci
 script:
-    - ng test --watch=false
-    - docker run gokulsubramani/docker-angular
+    - docker run gokulsubramani/docker-angular npm test

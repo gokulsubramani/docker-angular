@@ -29,7 +29,7 @@ script:
 deploy:
     provider: elasticbeanstalk
     region: "us-east-2"
-    app: "DockerAngular"
+    app: "Docker-Angular"
     env: "DockerAngular-env"
     bucket_name: "elasticbeanstalk-us-east-2-914520140918"
     bucket_path: "DockerAngular"

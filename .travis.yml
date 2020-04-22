@@ -23,4 +23,5 @@ before_script:
 - npm install
 
 script: 
-- docker run gokulsubramani/docker-angular npm run test -- --watch=false
+- npm run test -- --watch=false
+- docker run gokulsubramani/docker-angular

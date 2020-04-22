@@ -14,4 +14,4 @@ angular_karma:
     command: >
           bash -c "ng test"
 script:
-    - docker run gokulsubramani/docker-angular
+    - docker run -t gokulsubramani/docker-angular

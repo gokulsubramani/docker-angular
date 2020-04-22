@@ -3,9 +3,9 @@ services:
     - docker
 before_install:
     - docker build -t gokulsubramani/docker-angular -f Dockerfile.dev .
-install:
-     - npm install -g @angular/cli@latest
-     - npm install
+before_script:
+    - npm install -g @angular/cli
 script:
-     - docker run -t gokulsubramani/docker-angular npm run start --coverage
+    - npm run test-headless
+    - docker run -t gokulsubramani/docker-angular
     

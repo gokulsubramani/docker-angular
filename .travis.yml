@@ -28,11 +28,11 @@ script:
 
 deploy:
     provider: elasticbeanstalk
-    region: "us-east-2"
-    app: "Docker-Angular"
-    env: "DockerAngular-env"
+    region: "ap-south-1"
+    app: "EBSDocker"
+    env: "DockeEbsDockerrAngular-env"
     bucket_name: "elasticbeanstalk-us-east-2-914520140918"
-    bucket_path: "DockerAngular"
+    bucket_path: "EBSDocker"
     on:
         branch: "master"
     access_key_id: $AWS_ACCESS_KEY

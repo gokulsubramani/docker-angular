@@ -31,7 +31,7 @@ deploy:
     region: "ap-south-1"
     app: "EBSDocker"
     env: "DockeEbsDockerrAngular-env"
-    bucket_name: "elasticbeanstalk-us-east-2-914520140918"
+    bucket_name: "elasticbeanstalk-ap-south-1-914520140918"
     bucket_path: "EBSDocker"
     on:
         branch: "master"

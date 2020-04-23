@@ -30,7 +30,7 @@ deploy:
     provider: elasticbeanstalk
     region: "ap-south-1"
     app: "EBSDocker"
-    env: "DockeEbsDockerrAngular-env"
+    env: "Ebsdocker-env"
     bucket_name: "elasticbeanstalk-ap-south-1-914520140918"
     bucket_path: "EBSDocker"
     on:
